@@ -1,49 +1,45 @@
-package com.v1warriors.springbootproject;
+package com.v1warriors.springboot.entity;
 
 import java.sql.Date;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-
-
-
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "customer")
+@Table(name = "customer_info")
 public class Customer {
 
 	@Id
-	@Column(name= "customer_id")
-	private String customerId;
-	
-	@Column(name= "first_name")
+	@Column(name = "customer_id")
+	public String customerId;
+
+	@Column(name = "first_name")
 	private String firstName;
-	
-	@Column(name= "last_name")
+
+	@Column(name = "last_name")
 	private String lastName;
-	
-	@Column(name="company")
+
+	@Column(name = "company")
 	private String company;
-	
-	@Column(name="city")
+
+	@Column(name = "city")
 	private String city;
-	
-	@Column(name="country")
+
+	@Column(name = "country")
 	private String country;
-	
-	@Column(name="phone1")
+
+	@Column(name = "phone1")
 	private String phone1;
-	
-	@Column(name="phone2")
+
+	@Column(name = "phone2")
 	private String phone2;
-	
-	@Column(name="email")
+
+	@Column(name = "email")
 	private String email;
-	
-	@Column(name="subscription_date")
+
+	@Column(name = "subscription_date")
 	private Date subscriptionDate;
 
 	public String getCustomerId() {
